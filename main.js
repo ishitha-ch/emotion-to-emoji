@@ -27,7 +27,7 @@ function speak() {
     speakdata1="The first prediction is"+prediction1;
     speakdata2="The second prediction is"+prediction2;
     var utterThis= new SpeechSynthesisUtterance(speakdata1+speakdata2);
-    synth.speak=utterThis;
+    synth.speak(utterThis);
     console.log("spoken");
 }
 
